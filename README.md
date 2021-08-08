@@ -1,4 +1,4 @@
-# pageshot
+# Pageshot
 A tool to take screenshots of webpages using Puppeteer.
 
 # Supported browsers
