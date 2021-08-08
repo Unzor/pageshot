@@ -1,0 +1,41 @@
+<h1 style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);">Take a screenshot of a website!</h1>
+<a href="https://github.com/Unzor" style="position: absolute; top: 38%; left: 50%; transform: translate(-50%, -50%);"> Tool made by Unzor</a>
+<div></div>
+<input placeholder="URL of site here..." style="position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%);"></input>
+<div></div>
+<button id="request-btn" onclick="makeRequest();" style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);">Take Screenshot</button>
+<div></div>
+<button id="close-btn" onclick="this.style.display='none'; document.querySelector('#img-new').remove();" style="display: none; position: absolute; top: 95%; left: 50%; transform: translate(-50%, -50%);"> Close </button>
+<script>
+    function makeRequest() {
+        var request = new XMLHttpRequest();
+        request.open("POST", "/takeScreenshot");
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+
+        request.send(JSON.stringify({
+            page: document.querySelector('input').value
+        }));
+        request.onreadystatechange = function() {
+            var newImage = new Image();
+            if (!request.responseText == undefined || !request.responseText == null || !request.responseText == "") {
+                newImage.src = request.responseText;
+                newImage.style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);border-style:solid;"
+      var closeBtn=document.getElementById('close-btn');
+closeBtn.style.display="block";
+
+     
+                newImage.id = "img-new";
+                if (!document.getElementById('img-new')) {
+                    document.body.appendChild(newImage);
+                } else {
+                    document.getElementById('img-new').remove();
+                    document.body.appendChild(newImage);
+                }
+            } else {
+                newImage.remove();
+            };
+        }
+    }
+</script>
