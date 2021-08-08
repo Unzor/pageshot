@@ -22,7 +22,7 @@ sudo apt install git nodejs npm
 Create a new folder, and run this script in Terminal/Bash/PowerShell/cmd to get the NPM dependencies: (Express, Puppeteer)
 ```
 npm init -y
-npm install express puppeteer
+npm install express playwright
 ```
 After the installation is done, run this in Terminal/Bash/PowerShell/cmd to run Pageshot:
 ```
