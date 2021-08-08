@@ -5,9 +5,6 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json()) // To parse the incoming requests with JSON payloads
 
 
-const imageToBase64 = require('image-to-base64');
-
-
 app.get('/', function(req, res){
 res.sendFile(__dirname+'/index.html');
 });
