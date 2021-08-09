@@ -32,4 +32,7 @@ node index.js
 ```
 Navigate to [http://localhost:1024](http://localhost:1024) to open up Pageshot. Insert a URL to take a screenshot of, wait a few seconds, and a screenshot of your desired site will be displayed!
 
-# [Online demo](http://0b9a2281cb52.ngrok.io/)
+# [Online demo](http://8d941020b343.ngrok.io/)
+
+# Disclaimer
+The demo uses my own computer, and all the images are saved in a folder on my computer. I tweaked the code in the online demo, and it is on a proxy, but the original code is NOT foolproofed, and your IP can be leaked if someone goes to a site like [https://whatsmyip.com](https://whatsmyip.com/). Be careful with Pageshot.
