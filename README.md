@@ -35,4 +35,4 @@ Navigate to [http://localhost:1024](http://localhost:1024) to open up Pageshot. 
 #### [Online demo](http://8d941020b343.ngrok.io/)
 
 # Disclaimer
-The demo uses my own computer, and all the images are saved in a folder on my computer. I tweaked the code in the online demo, and it is on a proxy, but the original code is NOT foolproofed, and your IP can be leaked if someone goes to a site like [https://whatsmyip.com](https://whatsmyip.com/). Be careful with Pageshot.
+Pageshot uses a proxy. If you want to change the proxy server, find the .launch() function in index.js and change the server from there.
