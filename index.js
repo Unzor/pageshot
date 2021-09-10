@@ -18,7 +18,7 @@ const playwright = require('playwright');
   // Try to add 'firefox' to the list ↓
   for (const browserType of ['chromium', 'webkit']) {
     // @type {import('playwright').Browser}
-    const browser = await playwright[browserType].launch();
+    const browser = await playwright[browserType].launch({proxy: { server: 'proxy.crawlera.com:8010' }});
     const context = await browser.newContext();
     const page = await context.newPage();
     await page.goto(req.body.page);
