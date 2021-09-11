@@ -12,14 +12,14 @@ A tool to take screenshots of webpages using Puppeteer.
 - [npm](https://npmjs.com)
 - [Git](https://git-scm.com)
 - [Express](https://expressjs.com)
-- [P](https://developers.google.com/web/tools/puppeteer/)
+- [Playwright](https://playwright.dev)
 
 Download/install the most important (Git, NodeJS, npm) dependencies with this command: (Debian/Debian-based Linux distributions only, like Ubuntu. You can download all of these on Windows or other operating systems by clicking on the links)
 ```
 sudo apt install git nodejs npm
 ```
 # Setup
-Create a new folder, and run this script in Terminal/Bash/PowerShell/cmd to get the NPM dependencies: (Express, Puppeteer)
+Create a new folder, and run this script in Terminal/Bash/PowerShell/cmd to get the NPM dependencies: (Express, Playwright)
 ```
 npm init -y
 npm install express playwright
