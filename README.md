@@ -33,6 +33,3 @@ node index.js
 Navigate to [http://localhost:1024](http://localhost:1024) to open up Pageshot. Insert a URL to take a screenshot of, wait a few seconds, and a screenshot of your desired site will be displayed!
 
 #### [Online demo](http://8d941020b343.ngrok.io/)
-
-# Disclaimer
-Pageshot uses a proxy. If you want to change the proxy server, find the .launch() function in index.js and change the server from there.
